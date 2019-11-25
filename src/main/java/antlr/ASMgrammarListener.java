@@ -8,16 +8,6 @@ import org.antlr.v4.runtime.tree.ParseTreeListener;
  */
 public interface ASMgrammarListener extends ParseTreeListener {
 	/**
-	 * Enter a parse tree produced by {@link ASMgrammarParser#program}.
-	 * @param ctx the parse tree
-	 */
-	void enterProgram(ASMgrammarParser.ProgramContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link ASMgrammarParser#program}.
-	 * @param ctx the parse tree
-	 */
-	void exitProgram(ASMgrammarParser.ProgramContext ctx);
-	/**
 	 * Enter a parse tree produced by {@link ASMgrammarParser#instruction}.
 	 * @param ctx the parse tree
 	 */
@@ -27,16 +17,6 @@ public interface ASMgrammarListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitInstruction(ASMgrammarParser.InstructionContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link ASMgrammarParser#register}.
-	 * @param ctx the parse tree
-	 */
-	void enterRegister(ASMgrammarParser.RegisterContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link ASMgrammarParser#register}.
-	 * @param ctx the parse tree
-	 */
-	void exitRegister(ASMgrammarParser.RegisterContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link ASMgrammarParser#expression}.
 	 * @param ctx the parse tree
@@ -67,14 +47,4 @@ public interface ASMgrammarListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitFactor(ASMgrammarParser.FactorContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link ASMgrammarParser#number}.
-	 * @param ctx the parse tree
-	 */
-	void enterNumber(ASMgrammarParser.NumberContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link ASMgrammarParser#number}.
-	 * @param ctx the parse tree
-	 */
-	void exitNumber(ASMgrammarParser.NumberContext ctx);
 }

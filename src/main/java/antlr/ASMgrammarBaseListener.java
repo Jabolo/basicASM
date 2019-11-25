@@ -16,18 +16,6 @@ public class ASMgrammarBaseListener implements ASMgrammarListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterProgram(ASMgrammarParser.ProgramContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitProgram(ASMgrammarParser.ProgramContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
 	@Override public void enterInstruction(ASMgrammarParser.InstructionContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -35,18 +23,6 @@ public class ASMgrammarBaseListener implements ASMgrammarListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitInstruction(ASMgrammarParser.InstructionContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterRegister(ASMgrammarParser.RegisterContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitRegister(ASMgrammarParser.RegisterContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -83,18 +59,6 @@ public class ASMgrammarBaseListener implements ASMgrammarListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitFactor(ASMgrammarParser.FactorContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterNumber(ASMgrammarParser.NumberContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitNumber(ASMgrammarParser.NumberContext ctx) { }
 
 	/**
 	 * {@inheritDoc}
