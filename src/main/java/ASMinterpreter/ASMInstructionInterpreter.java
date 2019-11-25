@@ -35,12 +35,4 @@ public class ASMInstructionInterpreter {
         else if(register.equals("%ecx")) memory.setEcx(result);
         else if(register.equals("%edx")) memory.setEdx(result);
     }
-//    private Integer getRegisterValue(String register)
-//    {
-//        if (register.equals("%eax")) return memory.getEax();
-//        else if (register.equals("%ebx")) return memory.getEbx();
-//        else if (register.equals("%ecx")) return memory.getEcx();
-//        else if (register.equals("%edx")) return memory.getEdx();
-//        else return 0;
-//    }
 }

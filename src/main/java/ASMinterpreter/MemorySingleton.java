@@ -20,9 +20,7 @@ public class MemorySingleton {
     public Integer pop()
     {
         if (stack.size()==0)
-            //return null; -> ??? for empty stack
-            //throw new ErrorException(5);
-            System.out.println("pustystos!");
+            throw new RuntimeException();
         return stack.removeLast();
     }
     private Integer eax = null;
@@ -61,6 +59,5 @@ public class MemorySingleton {
     public void setEdx(Integer edx) {
         this.edx = edx;
     }
-
-
+    
 }

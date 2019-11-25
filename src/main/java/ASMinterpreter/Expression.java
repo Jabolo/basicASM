@@ -44,12 +44,12 @@ public class Expression {
             else if(operator.equals("*")) this.value = left*right;
             else if(operator.equals("/")){
                 if(right !=0) this.value = left/right;
-                else throw new ErrorInInstruction();
+                else throw new RuntimeException();
             }
         }
 
     }
-    else throw new ErrorInInstruction();
+    else throw new RuntimeException();
     }
 
     private Integer getInteger(String x) {
