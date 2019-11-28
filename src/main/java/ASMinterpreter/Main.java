@@ -20,9 +20,11 @@ public class Main {
         while (true){
             try {
                 instruction = reader.readLine();
+                if(instruction == null) return;
                 if(instruction.equals(""))continue;
                 else instruction += '\n';
-            }catch (Exception ex){
+            }
+            catch (Exception ex){
             }
             try {
                 CharStream charStream = fromString(instruction);
