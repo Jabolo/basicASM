@@ -28,17 +28,10 @@ public class Main {
             }
             try {
                 CharStream charStream = fromString(instruction);
-                ErrorsListenerSingleton errorsListenerSingleton = new ErrorsListenerSingleton();
-
                 ASMgrammarLexer asmGrammarLexer = new ASMgrammarLexer(charStream);
-                asmGrammarLexer.removeErrorListeners();
-                asmGrammarLexer.addErrorListener(errorsListenerSingleton);
-
                 CommonTokenStream commonTokenStream = new CommonTokenStream(asmGrammarLexer);
 
                 ASMgrammarParser asmGrammarParser = new ASMgrammarParser(commonTokenStream);
-                asmGrammarParser.removeErrorListeners();
-                asmGrammarParser.addErrorListener(errorsListenerSingleton);
                 ParseTree tree = asmGrammarParser.instruction();
 
                 ASMInstructionInterpreter.startInterpretingInstruction(tree);
